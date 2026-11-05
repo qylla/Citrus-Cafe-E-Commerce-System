@@ -1,0 +1,7 @@
+Options -Indexes
+DirectoryIndex home.php
+
+# Settings, database files and internal code are never served to visitors.
+RedirectMatch 404 (?i)/\.(env|git)
+RedirectMatch 404 (?i)/(config|dao|database)(/|$)
+RedirectMatch 404 (?i)/email_template\.php$
